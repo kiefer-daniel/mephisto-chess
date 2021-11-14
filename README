@@ -1,0 +1,25 @@
+Mephisto ♛
+
+This open-source chess program was developed by Team14 (Aammarah Idris, Darlena Nguyen, Kiefer Daniel, Kyle Mach, & Sofia Bernstein)
+for EECS 22L @ Spring 2020 at the University of California, Irvine. Please read the enclosed COPYRIGHT file for license information,
+and INSTALL for installation instructions. For user manual and software specification documentation, please see the /doc directory.
+
+	   //||   //|  ||^^^^  ||^^\\   ||   ||  ||   //^\\  ^^^||^^^  //^^\\   =======================================
+	  // ||  //||  ||      ||   ||  ||   ||  ||  ||         ||    ||    ||  =======================================
+	 //  || // ||  ||^^^^  ||^^^    ||^^^||  ||   ^^^^\\    ||    ||    ||  =======================================
+	//   ||//  ||  ||....  ||       ||   ||  ||   ....//    ||     \\..//   =======================================
+
+
+FIRST:
+
+1. Run the executable Server program with command 'bin/Server <portnumber> '
+	ex: 'bin/Server 14222'
+	note: The port number must be greater than 2000
+
+NEXT:
+
+2. Run the executable Client program with the command 'bin/ClientMephisto <serverAddress> <portnumber>'
+	ex: 'bin/ClientMephisto bondi.eecs.uci.edu 14222'
+	note: You must use the same port number as used when running the Server program
+
+

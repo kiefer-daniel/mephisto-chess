@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="helpWindow">
+    <property name="can_focus">False</property>
+    <property name="border_width">25</property>
+    <child>
+      <object class="GtkFixed" id="fixed3">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="returnToGameButton">
+            <property name="label" translatable="yes">Return to Game</property>
+            <property name="width_request">113</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_returnToGameButton_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">137</property>
+            <property name="y">248</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="logo">
+            <property name="width_request">182</property>
+            <property name="height_request">94</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">MephistoSmall.png</property>
+          </object>
+          <packing>
+            <property name="x">104</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="helpMessage">
+            <property name="width_request">397</property>
+            <property name="height_request">144</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">
+Click the origin and then the destination position to move a piece. 
+If the move is invalid, an error message will be shown. 
+After a piece is captured, it will be added to the graveyard.
+
+
+To add or remove a friend, click the add/remove button. 
+To chat, click the user's name, enter your message, and click send.
+Only online users can be messaged and they are marked with *.
+
+</property>
+            <property name="justify">center</property>
+            <property name="wrap">True</property>
+            <property name="ellipsize">start</property>
+          </object>
+          <packing>
+            <property name="y">102</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="imLabel">
+            <property name="width_request">115</property>
+            <property name="height_request">27</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Instant Messaging:</property>
+            <attributes>
+              <attribute name="underline" value="True"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">136</property>
+            <property name="y">169</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="chessLabel">
+            <property name="width_request">60</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Chess:</property>
+            <attributes>
+              <attribute name="underline" value="True"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">168</property>
+            <property name="y">92</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

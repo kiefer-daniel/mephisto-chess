@@ -1,0 +1,17 @@
+           //||   //|  ||^^^^  ||^^\\   ||   ||  ||   //^\\  ^^^||^^^  //^^\\   =======================================
+          // ||  //||  ||      ||   ||  ||   ||  ||  ||         ||    ||    ||  =======================================
+         //  || // ||  ||^^^^  ||^^^    ||^^^||  ||   ^^^^\\    ||    ||    ||  =======================================
+        //   ||//  ||  ||....  ||       ||   ||  ||   ....//    ||     \\..//   =======================================
+
+Welcome to Mephisto Soul, a Linux Chess and Instant Messaging Program!
+
+To install Mephisto Soul from Chat_Beta release,
+	1) Program is already installed. 
+	2) Check out README for more info on how to run Mephisto Soul. 
+		Have fun!
+
+To install Mephisto Soul from Chat_Beta_src release,
+	1) Run the command 'make'
+	2) Check out README for more info on how to run Mephisto Soul
+		Then, enjoy!
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="CreateNewWindow">
+    <property name="can_focus">False</property>
+    <property name="border_width">25</property>
+    <child>
+      <object class="GtkFixed" id="fixed2">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="newUsernameLabel">
+            <property name="width_request">112</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">1</property>
+            <property name="label" translatable="yes">Username: </property>
+          </object>
+          <packing>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="newPwLabel1">
+            <property name="width_request">112</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">1</property>
+            <property name="label" translatable="yes">Password: </property>
+          </object>
+          <packing>
+            <property name="y">260</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="newUsernameEntry">
+            <property name="width_request">200</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">●</property>
+            <property name="primary_icon_activatable">False</property>
+            <property name="secondary_icon_activatable">False</property>
+            <property name="primary_icon_sensitive">True</property>
+            <property name="secondary_icon_sensitive">True</property>
+          </object>
+          <packing>
+            <property name="x">125</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="newPwEntry1">
+            <property name="width_request">200</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="visibility">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+            <property name="primary_icon_activatable">False</property>
+            <property name="secondary_icon_activatable">False</property>
+            <property name="primary_icon_sensitive">True</property>
+            <property name="secondary_icon_sensitive">True</property>
+          </object>
+          <packing>
+            <property name="x">125</property>
+            <property name="y">260</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="newButton1">
+            <property name="label" translatable="yes">Create account</property>
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="yalign">0.4699999988079071</property>
+            <signal name="clicked" handler="on_newButton1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">80</property>
+            <property name="y">355</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="newButton2">
+            <property name="label" translatable="yes">Return</property>
+            <property name="width_request">100</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="relief">half</property>
+            <signal name="clicked" handler="on_newButton2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">220</property>
+            <property name="y">355</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="takenLabel">
+            <property name="width_request">279</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="foreground" value="#b0b41dbe1dbe"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">51</property>
+            <property name="y">181</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="newPwLabel2">
+            <property name="width_request">112</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">1</property>
+            <property name="label" translatable="yes">Confirm password: </property>
+          </object>
+          <packing>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="newPwEntry2">
+            <property name="width_request">200</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">20</property>
+            <property name="visibility">False</property>
+            <property name="invisible_char">●</property>
+            <property name="invisible_char_set">True</property>
+            <property name="primary_icon_activatable">False</property>
+            <property name="secondary_icon_activatable">False</property>
+            <property name="primary_icon_sensitive">True</property>
+            <property name="secondary_icon_sensitive">True</property>
+          </object>
+          <packing>
+            <property name="x">125</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="mephistoLogo2">
+            <property name="width_request">327</property>
+            <property name="height_request">159</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">MephistoMed.png</property>
+          </object>
+          <packing>
+            <property name="x">26</property>
+            <property name="y">7</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

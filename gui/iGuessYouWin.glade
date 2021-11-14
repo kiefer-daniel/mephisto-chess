@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="iGuessWindow">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="border_width">25</property>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="width_request">172</property>
+            <property name="height_request">94</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">MephistoSmall.png</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage" id="image2">
+            <property name="width_request">189</property>
+            <property name="height_request">156</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">mephistochan.png</property>
+          </object>
+          <packing>
+            <property name="x">186</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="okay">
+            <property name="label" translatable="yes">OK</property>
+            <property name="width_request">52</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_returnToLobby_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">73</property>
+            <property name="y">125</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width_request">214</property>
+            <property name="height_request">38</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Your opponent quit so I guess you won.</property>
+          </object>
+          <packing>
+            <property name="y">87</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

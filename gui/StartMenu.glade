@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="StartWindow">
+    <property name="can_focus">False</property>
+    <property name="border_width">25</property>
+    <child>
+      <object class="GtkFixed" id="fixed1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="ProgStart">
+            <property name="label" translatable="yes">Start</property>
+            <property name="width_request">102</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_ProgStart_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">9</property>
+            <property name="y">135</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="ProgQuit">
+            <property name="label" translatable="yes">Quit</property>
+            <property name="width_request">100</property>
+            <property name="height_request">31</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_ProgQuit_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">185</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="mephistoLogo1">
+            <property name="width_request">185</property>
+            <property name="height_request">99</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">MephistoSmall.png</property>
+          </object>
+          <packing>
+            <property name="x">65</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="versionLabel">
+            <property name="width_request">78</property>
+            <property name="height_request">23</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0.50999999046325684</property>
+            <property name="yalign">0.56000000238418579</property>
+            <property name="label" translatable="yes">v2.0</property>
+            <property name="justify">right</property>
+          </object>
+          <packing>
+            <property name="x">56</property>
+            <property name="y">52</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="width_request">187</property>
+            <property name="height_request">162</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">mephistochan.png</property>
+          </object>
+          <packing>
+            <property name="x">124</property>
+            <property name="y">98</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
